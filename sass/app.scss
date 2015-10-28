@@ -22,7 +22,7 @@ body {
   max-width: 1040px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  // align-items: stretch;
   border: 2px $brand_blue solid;
 }
 
@@ -32,6 +32,24 @@ body {
   margin: 40px;
 }
 
-h2, p, button {
+h2 {
+  font-size: 2rem;
+}
+
+h2, p, {
   color: $brand_blue;
+  text-align: center;
+}
+h3 {
+  color: #a8afb0;
+  text-align: center;
+}
+button {
+  padding: 0.6rem;
+  width: 7.5rem;
+  justify-content: center;
+  border: transparent;
+  border-radius: 3%;
+  background: $brand_blue;
+  color: white;
 }
