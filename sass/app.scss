@@ -1,0 +1,37 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+@import "normalize";
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+
+@import "font-awesome";
+
+$brand_blue: #3e88be;
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+  display: flex;
+  max-width: 1040px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  border: 2px $brand_blue solid;
+}
+
+.three-up {
+  height: 400px;
+  width: 200px;
+  margin: 40px;
+}
+
+h2, p, button {
+  color: $brand_blue;
+}
