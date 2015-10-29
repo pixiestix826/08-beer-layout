@@ -1,6 +1,5 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 @import "normalize";
-
 $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 
 @import "font-awesome";
@@ -63,3 +62,5 @@ button {
 i {
   padding-right: 0.3rem;
 }
+
+@import "mobile";
