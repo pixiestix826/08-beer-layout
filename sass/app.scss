@@ -6,50 +6,60 @@ $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import "font-awesome";
 
 $brand_blue: #3e88be;
-
+$brand_grey: #a8afb0;
+/* Global Styling */
 html {
   box-sizing: border-box;
 }
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
+
+/* Main Styling */
 .container {
   display: flex;
-  max-width: 1040px;
   flex-wrap: wrap;
+  max-width: 1040px;
+  text-align: center;
   justify-content: center;
-  // align-items: stretch;
+  align-items: center;
   border: 2px $brand_blue solid;
 }
-
 .three-up {
   height: 400px;
   width: 200px;
   margin: 40px;
 }
-
-h2 {
-  font-size: 2rem;
+h2, h3, p {
+  margin: auto;
 }
-
-h2, p, {
+h2 {
   color: $brand_blue;
-  text-align: center;
+  font-size: 2rem;
+  white-space: nowrap;
 }
 h3 {
-  color: #a8afb0;
-  text-align: center;
+  color: $brand_grey;
+  padding: 1rem;
+}
+p {
+  color: $brand_blue;
+  font-size: 0.7rem;
 }
 button {
+  display: flex;
   padding: 0.6rem;
-  width: 7.5rem;
-  justify-content: center;
+  width: 8rem;
+  transform: translate(30%, 75%);
+  line-height: 1rem;
   border: transparent;
   border-radius: 3%;
   background: $brand_blue;
   color: white;
+}
+i {
+  padding-right: 0.3rem;
 }
