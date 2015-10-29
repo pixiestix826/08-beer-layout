@@ -22,20 +22,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 1040px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   border: 2px $brand_blue solid;
 }
+
 .three-up {
-  height: 400px;
-  width: 200px;
-  margin: 40px;
+  flex: 1 0 calc(33.333% - 40px);
+  text-align: center;
+  margin: 20px;
 }
-h2, h3, p {
-  margin: auto;
-}
+
 h2 {
+  margin: 0;
   color: $brand_blue;
   font-size: 2rem;
   white-space: nowrap;
@@ -46,16 +43,12 @@ h3 {
 }
 p {
   color: $brand_blue;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 button {
-  display: flex;
   padding: 0.6rem;
-  width: 8rem;
-  transform: translate(30%, 75%);
-  line-height: 1rem;
   border: transparent;
-  border-radius: 3%;
+  border-radius: 2px;
   background: $brand_blue;
   color: white;
 }
