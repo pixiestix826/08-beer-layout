@@ -1,0 +1,61 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+@import "normalize";
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+
+@import "font-awesome";
+
+$brand_blue: #3e88be;
+$brand_grey: #a8afb0;
+/* Global Styling */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Main Styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1040px;
+  margin: auto;
+  border: 2px $brand_blue solid;
+}
+
+.three-up {
+  flex: 1 0 calc(33.333% - 40px);
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  margin: 0;
+  color: $brand_blue;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+h3 {
+  color: $brand_grey;
+  padding: 1rem;
+}
+p {
+  color: $brand_blue;
+  font-size: 0.8rem;
+}
+button {
+  padding: 0.6rem;
+  border: transparent;
+  border-radius: 2px;
+  background: $brand_blue;
+  color: white;
+}
+i {
+  padding-right: 0.3rem;
+}
+
+@import "mobile";
+@import "tablet_screen";
